@@ -13,7 +13,7 @@ function videoPopup() {
         iframe: {
             patterns: {
                 youtube: {
-                    src: link
+                    src: https://www.youtube.com/watch?v=zQNnyxuru4M
                 }
             }
         }
