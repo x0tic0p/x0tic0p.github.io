@@ -1,116 +1,20 @@
-html code for tic tac toe single player
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Tic Tac Toe Single Player</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
-
-            #board {
-                width: 300px;
-                height: 300px;
-                border: 1px solid #000;
-            }
-
-            #board td {
-                width: 100px;
-                height: 100px;
-                text-align: center;
-                font-size: 48px;
-                font-weight: bold;
-            }
-
-            #message {
-                font-size: 24px;
-                font-weight: bold;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Tic Tac Toe Single Player</h1>
-
-        <table id="board">
-            <tr>
-                <td id="cell-0-0"></td>
-                <td id="cell-0-1"></td>
-                <td id="cell-0-2"></td>
-            </tr>
-            <tr>
-                <td id="cell-1-0"></td>
-                <td id="cell-1-1"></td>
-                <td id="cell-1-2"></td>
-            </tr>
-            <tr>
-                <td id="cell-2-0"></td>
-                <td id="cell-2-1"></td>
-                <td id="cell-2-2"></td>
-            </tr>
-        </table>
-
-        <p id="message"></p>
-
-        <script>
-            // Variables
-            var board = [
-                ["", "", ""],
-                ["", "", ""],
-                ["", "", ""]
-            ];
-            var turn = "X";
-            var player = "X";
-            var computer = "O";
-            var winner = null;
-
-            // Functions
-            function render() {
-                for (var i = 0; i < 3; i++) {
-                    for (var j = 0; j < 3; j++) {
-                        var cell = document.getElementById("cell-" + i + "-" + j);
-                        cell.innerText = board[i][j];
-                    }
-                }
-            }
-
-            function userTurn(i, j) {
-                if (board[i][j] == "") {
-                    board[i][j] = player;
-                    turn = computer;
-                    winner = getWinner();
-                    render();
-                    if (winner == null && !isBoardFull()) {
-                        computerTurn();
-                    }
-                }
-            }
-
-            function computerTurn() {
-                // TO DO: Implement computer turn
-            }
-
-            function getWinner() {
-                // TO DO: Implement a function to determine the winner
-            }
-
-            function isBoardFull() {
-                // TO DO: Implement a function to determine if the board is full
-            }
-
-            // Event Handlers
-            document.getElementById("board").addEventListener("click", function(event) {
-                if (turn == player) {
-                    var cell = event.target;
-                    var i = cell.id.split("-")[1];
-                    var j = cell.id.split("-")[2];
-                    userTurn(i, j);
-                }
-            });
-
-            // Initial Render
-            render();
-        </script>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>Mini Game</title>
+  </head>
+  <body>
+    <h1>Mini Game</h1>
+    <div>
+      <p>Welcome to the mini game!</p>
+      <p>Instructions: Click the button to start the game.</p>
+      <button onclick="startGame()">Start</button>
+    </div>
+    <script>
+      function startGame(){
+        alert("Let's play!");
+      }
+    </script>
+  </body>
 </html>
