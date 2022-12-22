@@ -1,8 +1,78 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #f3f3f3;
+            font-family: sans-serif;
+            font-size: 16px;
+            margin: 0 auto;
+            padding: 25px 0;
+            width: 80%;
+        }
+        #container {
+            background-color: #FFFFFF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+            padding: 20px;
+            width: 90%;
+        }
+        #profile-image {
+            background-color: #FFFFFF;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: block;
+            height: 150px;
+            margin: 0 auto;
+            width: 150px;
+        }
+        #profile-name {
+            color: #333333;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 auto;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        #profile-about {
+            font-size: 16px;
+            line-height: 22px;
+            margin: 0 auto;
+            text-align: center;
+            width: 90%;
+        }
+        #contact-list {
+            margin: 0 auto;
+            width: 90%;
+        }
+        #contact-list li {
+            background-color: #FFFFFF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            color: #333333;
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 30%;
+        }
+        #contact-list a {
+            color: #333333;
+            text-decoration: none;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<h1>Done!</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div id="container">
+        <img id="profile-image" src="profile-image.jpg" alt="My profile image">
+        <h1 id="profile-name">John Smith</h1>
+        <p id="profile-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed justo nec nisi pulvinar dignissim. Nullam auctor rhoncus malesuada.</p>
+        <ul id="contact-list">
+            <li><a href="mailto:john@example.com">john@example.com</a></li>
+            <li><a href="tel:+0123456789">+0123456789</a></li>
+            <li><a href="https://twitter.com/johnsmith">@johnsmith</a></li>
+        </ul>
+    </div>
 </body>
 </html>
