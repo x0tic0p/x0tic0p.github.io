@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **react.js , node.js , python**
 
-- 👨‍💻 All of my projects are available at [https://github.com/x0tic0p/](https://github.com/x0tic0p/)
+- 👨‍💻 All of my projects are available at [[https://github.com/x0tic0p/](https://github.com/x0tic0p/)](https://github.com/x0tic0p/x0tic0p.github.io/)
 
 - 💬 Ask me about **C,C++,Java,PHP,HTML,CSS**
 
