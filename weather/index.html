@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Widget</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .area-error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-widget">
+        <h1>Weather Widget By xotic</h1>
+        <form id="weather-form">
+            <input id="input-area" type="text" name="area" placeholder="Enter Your Area To Check Weather" style="width: 250px;">
+            <span class="area-error" id="area-error"></span>
+            <input id="submit" type="submit" value="Check Weather">
+        </form>
+        <br><br>
+        <iframe id="weather-frame" class="weather-frame" src="https://wttr.in/India"></iframe>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("weather-form");
+            const inputArea = document.getElementById("input-area");
+            const areaError = document.getElementById("area-error");
+            const weatherFrame = document.getElementById("weather-frame");
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+                const area = inputArea.value.trim();
+
+                if (!area) {
+                    areaError.textContent = "Please enter an area";
+                    weatherFrame.src = ""; // Clear the iframe content
+                } else if (!/^[a-zA-Z]+$/.test(area)) {
+                    areaError.textContent = "Only a single word is allowed";
+                    weatherFrame.src = ""; // Clear the iframe content
+                } else {
+                    areaError.textContent = "";
+                    const linksrc = "https://wttr.in/" + area;
+                    weatherFrame.src = linksrc; // Update the iframe source
+                }
+            });
+        });
+    </script>
+</body>
+</html>
