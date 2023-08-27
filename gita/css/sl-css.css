@@ -27,13 +27,13 @@ body {
 #submitButton{
     padding: 5px;
     font-size: 16px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border: none;
-    background-color: rgb(196, 190, 190);
     border-radius: 3px;
+    background-color: #007BFF;
+    transition: background-color 0.3s ease-in-out;
 }
 #submitButton:hover{
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background-color: #0056b3;
 }
 
 #slokaFrame {
