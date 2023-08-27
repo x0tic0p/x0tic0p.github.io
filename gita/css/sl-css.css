@@ -39,19 +39,16 @@ body {
 #slokaFrame {
     margin-top: 20px;
     width: 100%;
-    height: 500px;
+    height: 600px; /* Increase the height as needed */
     border: none;
 }
+
 @media screen and (max-width: 768px) {
-    .input-group {
-        flex-direction: row;
-    }
-    .input-group label {
-        margin-right: 20px;
-    }
+    /* Restyle the iframe for smaller screens */
     #slokaFrame {
-        height: 300px;
-        width: 380px;
+        width: 100%;
+        height: 400px; /* Adjust the height for mobile screens */
     }
 }
+
 
