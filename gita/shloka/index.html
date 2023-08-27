@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,33 @@
     <link rel="stylesheet" href="../css/sl-css.css">
     <link rel="icon" type="image/x-icon" href="../favicon.png">
 </head>
+
 <body>
-    <h1>Bhagavad Gita Sloka Viewer</h1>
-    <div id="inputContainer">
-        <div class="input-group">
-            <label for="chapterInput">Enter Chapter:</label>
-            <input type="number" id="chapterInput" placeholder="Chapter">
+    <div class="header">
+        <h1>Bhagavad Gita Sloka Viewer</h1>
+        <div id="inputContainer">
+            <div class="input-group">
+                
+                <label for="chapterInput">Enter Chapter:</label>
+                <input type="number" id="chapterInput" placeholder="Chapter">
+            </div>
+            <div class="input-group">
+                <label for="shlokaInput">Enter Shloka Number:</label>
+                <input type="number" id="shlokaInput" placeholder="Shloka Number">
+            </div>
+
         </div>
-        <div class="input-group">
-            <label for="shlokaInput">Enter Shloka Number:</label>
-            <input type="number" id="shlokaInput" placeholder="Shloka Number">
+        <div class="btns">
+            <button id="submitButton">Show Shloka</button>
+            <a href="../"><button id="submitButton">Back To Home</button></a>
         </div>
-        <button id="submitButton">Show Shloka</button>
-        <a href="../"><button id="submitButton">Back To Home</button></a>
+
     </div>
-    <iframe id="slokaFrame"></iframe>
+    <div id="iframeContainer">
+        <iframe id="slokaFrame"></iframe>
+    </div>
+    
     <script src="../js/sl-script.js"></script>
 </body>
+
 </html>
