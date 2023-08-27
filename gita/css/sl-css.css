@@ -49,4 +49,8 @@ body {
     .input-group label {
         margin-right: 20px;
     }
+    #slokaFrame {
+        height: 300px;
+    }
 }
+
