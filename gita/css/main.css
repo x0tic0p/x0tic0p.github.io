@@ -1,41 +1,84 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
+/* Style the button container */
 .button-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100%;
+    justify-content: center;
+    height: 100vh;
 }
 
+/* Style the buttons */
 .button {
-    background-color: #3498db;
-    color: #ffffff;
-    padding: 20px;
+    padding: 15px 40px;
+    font-size: 20px;
+    background-color: #007BFF;
+    color: #fff;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 24px;
-    margin: 10px;
-    width: 80%;
-    max-width: 400px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+    width: 700px;
+    margin: 10px; /* Add some margin between buttons */
+    height: 111px;
 }
 
-@media (max-width: 700px) {
+/* Hover effect */
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
     .button {
         font-size: 18px;
-        padding: 15px;
-    }
-    
-    .button-container {
-        display: flex;
-        justify-content: center; /* Center vertically on mobile */
-        align-items: center; /* Center horizontally on mobile */
+        padding: 12px 30px;
+        width: 400px;
     }
 }
+
+@media (max-width: 445px) {
+    .button {
+        font-size: 18px;
+        padding: 10px 25px;
+        width: 360px;
+    }
+}
+
+@media (max-width: 365px) {
+    .button {
+        font-size: 20px;
+        padding: 10px 25px;
+        width: 290px;
+        height: 100px;
+    }
+}
+
+
+@media (max-width: 306px) {
+    .button {
+        font-size: 15px;
+        padding: 5px 15px;
+        width: 230px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 248px) {
+    .button {
+        font-size: 15px;
+        padding: 5px 15px;
+        width: 190px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 199px) {
+    .button {
+        font-size: 15px;
+        padding: 5px 15px;
+        width: 150px;
+        height: 100px;
+    }
+}
+
