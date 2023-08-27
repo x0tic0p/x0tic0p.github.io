@@ -41,7 +41,6 @@ body {
     width: 100%;
     height: 500px;
     border: none;
-
 }
 @media screen and (max-width: 768px) {
     .input-group {
@@ -52,7 +51,7 @@ body {
     }
     #slokaFrame {
         height: 300px;
-        width: 800px;
+        width: 380px;
     }
 }
 
