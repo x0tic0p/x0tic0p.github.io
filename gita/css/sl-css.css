@@ -1,100 +1,54 @@
-/* Reset some default browser styles */
-body, h1, h2, h3, p, ul, li, button {
-    margin: 0;
-    padding: 0;
-}
-
-/* Set a background color for the body */
 body {
-    background-color: #f2f2f2;
     font-family: Arial, sans-serif;
+    text-align: center;
 }
 
-/* Style the header */
-header {
-    background-color: #007bff; /* Header background color */
-    color: #fff; /* Header text color */
-    padding: 20px; /* Add some padding to the header */
-    text-align: center; /* Center-align header content */
-}
-
-/* Style the h1 element inside the header */
-header h1 {
-    font-size: 24px; /* Adjust the font size */
-    margin-bottom: 10px; /* Add some space below the heading */
-}
-
-/* Style the input container */
-.input-container {
-    display: flex; /* Display inputs in a row */
-    flex-wrap: wrap; /* Allow inputs to wrap to the next line on smaller screens */
-    justify-content: center; /* Center-align input elements */
-}
-
-/* Style input groups */
-.input-group {
-    margin: 10px; /* Add some spacing around input groups */
-}
-
-/* Style input labels */
-.input-group label {
-    display: block; /* Display labels as blocks */
-    font-size: 14px; /* Adjust label font size */
-    margin-bottom: 5px; /* Add some space below labels */
-}
-
-/* Style input elements */
-.input-group input {
-    width: 100%; /* Make inputs take full width of their container */
-    padding: 8px; /* Add some padding to inputs */
-    border: 1px solid #ccc; /* Add a border to inputs */
-    border-radius: 4px; /* Round the corners of inputs */
-}
-
-/* Style buttons */
-.btns {
-    display: flex; /* Display buttons in a row */
-    justify-content: center; /* Center-align buttons */
-    margin-top: 20px; /* Add some spacing above buttons */
-}
-
-/* Style the "Show Shloka" button */
-#submitButton {
-    background-color: #007bff; /* Button background color */
-    color: #fff; /* Button text color */
-    padding: 10px 20px; /* Add padding to the button */
-    border: none; /* Remove button border */
-    border-radius: 4px; /* Round the corners of the button */
-    cursor: pointer; /* Add a pointer cursor to the button */
-    margin-right: 10px; /* Add spacing to the right of the button */
-}
-
-/* Style the "Back To Home" button */
-#backButton {
-    background-color: #333; /* Button background color */
-    color: #fff; /* Button text color */
-    padding: 10px 20px; /* Add padding to the button */
-    border: none; /* Remove button border */
-    border-radius: 4px; /* Round the corners of the button */
-    cursor: pointer; /* Add a pointer cursor to the button */
-}
-
-/* Style the iframe container */
-#iframeContainer {
+#inputContainer {
     margin-top: 50px;
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive iframe */
-    overflow: hidden;
-    max-width: 100%; /* Ensure the iframe doesn't exceed its container */
-    height: 100px;
 }
 
-/* Style the iframe itself */
-#iframeContainer iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none; /* Remove iframe border */
+.input-group {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.input-group label {
+    margin-right: 10px;
+}
+
+#chapterInput, #shlokaInput{
+    padding: 5px;
+    font-size: 16px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+#submitButton{
+    padding: 5px;
+    font-size: 16px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border: none;
+    background-color: rgb(196, 190, 190);
+    border-radius: 3px;
+}
+#submitButton:hover{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#slokaFrame {
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    #slokaFrame {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
