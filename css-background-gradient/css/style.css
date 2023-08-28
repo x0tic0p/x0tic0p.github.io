@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+
+.gradient-box {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #007bff;
+    transition: background-color 0.3s ease-in-out;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #0056b3;
+}
+
+.color-codes {
+    margin-top: 20px;
+}
