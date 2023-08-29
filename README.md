@@ -17,9 +17,10 @@
 - [To-Do Website](https://x0tic0p.github.io/to-do/)
 - [Random Quotes Generator](https://x0tic0p.github.io/random-quotes/)
 - [Weather Reports Website](https://x0tic0p.github.io/weather/)
-- [Shrimad Bhagwat Gita Website](https://x0tic0p.github.io/gita/)
+- [Shrimad Bhagavad Gita Website](https://x0tic0p.github.io/gita/)
 - [CSS Gradient Generator](https://x0tic0p.github.io/css-background-gradient)
 - [Fake Data Generator](https://x0tic0p.github.io/fake-data)
+- [Random Image Generator](https://x0tic0p.github.io/random-photo)
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://codepen.io/pain-playz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="pain-playz" height="30" width="40" /></a>
