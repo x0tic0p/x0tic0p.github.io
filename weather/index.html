@@ -22,31 +22,6 @@
         <br><br>
         <iframe id="weather-frame" class="weather-frame" src="https://wttr.in/India"></iframe>
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const form = document.getElementById("weather-form");
-            const inputArea = document.getElementById("input-area");
-            const areaError = document.getElementById("area-error");
-            const weatherFrame = document.getElementById("weather-frame");
-
-            form.addEventListener("submit", function (event) {
-                event.preventDefault();
-                const area = inputArea.value.trim();
-
-                if (!area) {
-                    areaError.textContent = "Please enter an area";
-                    weatherFrame.src = ""; // Clear the iframe content
-                } else if (!/^[a-zA-Z]+$/.test(area)) {
-                    areaError.textContent = "Only a single word is allowed";
-                    weatherFrame.src = ""; // Clear the iframe content
-                } else {
-                    areaError.textContent = "";
-                    const linksrc = "https://wttr.in/" + area;
-                    weatherFrame.src = linksrc; // Update the iframe source
-                }
-            });
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
