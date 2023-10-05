@@ -19,7 +19,7 @@
 - [Random Quotes Generator](https://x0tic0p.github.io/API/random-quotes/)
 - [Weather Reports Website](https://x0tic0p.github.io/API/weather/)
 - [Shrimad Bhagavad Gita Website](https://x0tic0p.github.io/API/gita/)
-- [CSS Gradient Generator](https://x0tic0p.github.io/css-background-gradient)
+- [CSS Gradient Generator](https://x0tic0p.github.io/Mini-Projects/css-background-gradient/)
 - [Fake Data Generator](https://x0tic0p.github.io/API/fake-data)
 - [Random Image Generator](https://x0tic0p.github.io/API/random-photo)
 <h3 align="left">Connect with me:</h3>
