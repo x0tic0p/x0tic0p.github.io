@@ -39,3 +39,24 @@ button:hover{
 .color-codes {
     margin-top: 20px;
 }
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    animation: fadeOut 3s ease-in-out;
+}
+  
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}

@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const color1Rgb = document.getElementById("color1Rgb");
     const color2Hex = document.getElementById("color2Hex");
     const color2Rgb = document.getElementById("color2Rgb");
+    const copybutton = document.getElementById("copycss");
+    const notification = document.getElementById("notification");
     function generateRandomColor() {
         const letters = "0123456789ABCDEF";
         let color = "#";
@@ -32,4 +34,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     generateButton.addEventListener("click", updateGradient);
     updateGradient();
+
+    copybutton.addEventListener("click", copyCSS);
+    updateGradient();
+
+    function copyCSS() {
+        const cssText = lineargradient.textContent;
+        const tempTextarea = document.createElement("textarea");
+        tempTextarea.value = cssText;
+        document.body.appendChild(tempTextarea);
+        tempTextarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempTextarea);
+        notification.style.display = "block";
+        setTimeout(function () {
+            notification.style.display = "none";
+        }, 2500);
+    }
 });
