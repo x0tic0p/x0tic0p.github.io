@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine?</title>
+  <style>
+    body, html {
+    background-color: pink;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #proposal-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #yes-button,#no-button{
+        border: none;
+        border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="proposal-container">
+    <img id="valentine-gif" src="https://media.tenor.com/SIyitsbGX-oAAAAi/milk-and-mocha-cute.gif" alt="Valentine GIF" width="300">
+    <i><b><div id="proposal-text">Will you be my valentine? 🥺</div></b></i>
+  </div>
+  <div class="btns">
+  <button id="yes-button">YES</button>
+  <button id="no-button">NO</button>
+</div>
+
+  <script>
+    const list1 = [
+      "Are you sure?🥺",
+      "I'll buy you a chocolate if you say yes🥺",
+      "Really sure?🥺",
+      "Think again!!🥺💖",
+      "Last chance💖",
+      "You might regret this🥺",
+      "Give it another thought..💞",
+      "Please say yes! 💖",
+      "This could be a mistake💔",
+      "Have a heart🥺💖",
+      "Don't be so cold😢",
+      "You're breaking my heart🥺💖",
+      "You'd make my day if you say yes! 😊",
+      "Think again! You might change your mind. 🥺💖",
+      "Please reconsider! 💖",
+      "Take your time, but consider saying yes! 😊",
+      "I'll be waiting for your 'yes'! ❤️",
+      ""
+    ];
+
+    const proposalText = document.getElementById('proposal-text');
+    const noButton = document.getElementById('no-button');
+    const yesButton = document.getElementById('yes-button');
+
+    function getRandomSentence() {
+      return list1[Math.floor(Math.random(1,16) * list1.length)];
+    }
+
+    noButton.addEventListener('click', () => {
+      const randomSentence = getRandomSentence();
+      proposalText.textContent = randomSentence;
+      increaseYesButtonSize();
+    });
+
+    function increaseYesButtonSize() {
+      const computedStyle = window.getComputedStyle(yesButton);
+      const currentFontSize = parseFloat(computedStyle.getPropertyValue('font-size'));
+      const newFontSize = currentFontSize * 1.2;
+      yesButton.style.fontSize = newFontSize + 'px';
+    }
+    const valentineGif = document.getElementById('valentine-gif');
+    function changeGifAndText() {
+      valentineGif.src = "https://media1.tenor.com/m/8PyRUykj9pMAAAAC/yay-peachcat.gif";
+      proposalText.textContent = "Let's go out on a date! 🌹";
+      yesButton.style.display = 'none';
+      noButton.style.display = 'none';
+    }
+
+    yesButton.addEventListener('click', () => {
+      changeGifAndText();
+    });
+  </script>
+</body>
+</html>
