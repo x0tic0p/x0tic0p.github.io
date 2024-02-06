@@ -25,7 +25,7 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://codepen.io/pain-playz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="pain-playz" height="30" width="40" /></a>
-<a href="https://twitter.com/gamer_baccha" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="gamer_baccha" height="30" width="40" /></a>
+<a href="https://twitter.com/GohilJaym1N" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="gamer_baccha" height="30" width="40" /></a>
 <a href="https://instagram.com/mr.gamer_3334" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="mr.gamer_3334" height="30" width="40" /></a>
 <a href="https://www.youtube.com/c/pain playz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="pain playz" height="30" width="40" /></a>
 <a href="https://discord.gg/VfWQ7YcD6Q" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="VfWQ7YcD6Q" height="30" width="40" /></a>
